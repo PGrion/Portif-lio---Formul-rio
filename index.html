@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesouros saborosos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+     <div class="header">
+        <h3>Faça parte da tripulação e escolha conosco!</h3>
+     </div>
+     <div class="form-container">
+        <div class="form-header">
+         <p>Formulário</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Lanches</h1>
+          <p>
+            Marque os tesouros que mais te atraem
+          </p>
+        <form>
+         <div class="box-input">
+            <label for="name">Nome<span class="required-field">*</span></label>
+            <input type="text" name="name" id="name" class="block" placeholder="Seu nome" minlength="1" maxlength="20" required>
+          </div>
+          <br />
+          <div>
+            <label for="lanches">Selecione os que você gosta ou tem vontade de provar dos lanches que já temos no cardápio:</label>
+            <div class="radio">
+              <br />
+            <input type="checkbox" name="lanches[]" value="baú_do_tesouro">
+            <label for="baú_do_tesouro">Baú do tesorou: Pão brioche - Maionese da casa - Hambúrguer 150g - Queijo cheddar - Alface americana - Tomate - Cebola roxa</label>
+          </div>
+          <br />
+            <div class="radio">
+            <input type="checkbox" name="Lanches[]" value="capitão">
+            <label for="capitão">Capitão: Pão brioche - Maionese da casa - Hambúrguer 150g - Queijo cheddar - Bacon - Alface americana - Tomate - Cebola roxa</label>
+          </div>
+          <br />
+            <div class="radio">
+            <input type="checkbox" name="Lanches[]" value="piratinha">
+            <label for="piratinha">Piratinha: Pão brioche - Maionese da casa - Smash 90g - Queijo cheddar</label>
+          </div>
+          <br />
+          <div class="radio">
+            <input type="checkbox" name="Lanches[]" value="navio_pirata">
+            <label for="navio_pirata">Navio pirata: Pão australiano - Barbecue - Hambúrguer 150g - Cheddar cremoso - Bacon - Cebola caramelizada</label>
+          </div>
+          <br />
+          <div class="radio">
+            <input type="checkbox" name="Lanches[]" value="ilha_de_queijo">
+            <label for="ilha_de_queijo">Ilha de queijo: Pão brioche - Maionese da casa - Hambúrguer 150g - Queijo empanado</label>
+          </div>
+          <br />
+          <div class="box-input">
+            <label for="description">Deixe aqui um feedback dos lanches atuais do cardápio:</label>
+            <textarea name="description" id="description" class="block" placeholder="Descreve o que gosta e o que não gosta dos lanches, e o que pode melhorar"></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="novos_lanches">Escolha um entre os novos lanches:<span class="required-field">*</span></label>
+            <div class="radio">
+              <br />
+              <input type="radio" value="mar_de_nachos" name="novos_lanches" required="required">
+              <label for="mar_de_nachos">Mar de Nachos: Pão brioche - Maionese da casa - Hambúguer 150g - Cheddar cremoso - Bacon - Nachos</label>
+              <br />
+              <br />
+              <input type="radio" value="um_bando_de_piratas" name="novos_lanches">
+              <label for="um_bando_de_piratas">Um bando de piratas: Pão brioche - Frango com molho especial - Mussarela</label>
+              <br />
+              <br />
+              <input type="radio" value="monstro_marinho" name="novos_lanches">
+              <label for="monstro_marinho">Monstro marinho: Pão brioche - Molho especial do chef - Três smashs 90g - Queijo cheddar - Bacon - Cebola roxa</label>
+            </div>
+            <br />
+            <br />
+          <div class="optional-box">
+            <p>Opções que você gostaria de ver dentro do Baú Burguer:</p>
+            <ul class="optional-list">
+              <li>
+                <input type="checkbox" id="hot_dog" name="optional[]" value="hot_dog">
+                <label for="hot_dog">Hot Dog</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tiras_de_queijo" name="optional[]" value="tiras_de_queijo">
+                <label for="tiras_de_queijo">Tiras de Queijo</label>
+              </li>
+              <li>
+                <input type="checkbox" id="nuggets" name="optional[]" value="nuggets">
+                <label for="nuggets">Nuggets</label>
+              </li>
+              <li>
+                <input type="checkbox" id="orions_ring" name="optional[]" value="orions_ring">
+                <label for="orions_ring">Orions ring</label>
+              </li>
+            </ul>
+          </div>
+          <br />
+          <br/>
+          <div class="box-input">
+            <label for="description">Caso tenha algum comentário ou sugestão, estamos ansiosos para ouvir, você fazem parte da tripulação do Baú Burguer e sua opinião é valiosa para nós</label>
+            <textarea name="description" id="description" class="block" placeholder="O capitão lerá com muito carinho seu comentário ou sugestão"></textarea>
+          </div>
+          <br />
+          <br />
+          <input type="submit" value="Enviar" class="btn-submit"/>
+        </form>
+        </div>
+     </div>
+   </div>
+</body>
+</html>
